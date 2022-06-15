@@ -39,6 +39,7 @@ Route::prefix('book')->group(function () {
     Route::any('/search', "$cr@searchBook");
     Route::any('/find-category', "$cr@findCategory");
     Route::get('/{id}/delete', "$cr@destroy");
+    Route::post('/{id}/update', "$cr@update");
     Route::any('/{id}', "$cr@getDetail");
 });
 
